@@ -14,6 +14,11 @@
 * [Why we use the Linux kernel's TCP stack - comments - 2020](https://news.ycombinator.com/item?id=24661653)
 * [linux vs freebsd networking](https://matteocroce.medium.com/linux-and-freebsd-networking-cbadcdb15ddd)
 
+# Scheduler
+* [sched-design-CF](https://docs.kernel.org/scheduler/sched-design-CFS.html)
+  SCHED_NORMAL, SCHED_BATCH, SCHED_IDLE, SCHED_RR / SCHED_FIFO (sched/rt.c)
+* [kernel/sched/fair.c](https://github.com/torvalds/linux/blob/master/kernel/sched/fair.c)
+
 # Tools
 * [https://dogbolt.org/](https://dogbolt.org/) - [https://godbolt.org/](https://godbolt.org/)
 * [src search - linux kernel](https://livegrep.com/search/linux)

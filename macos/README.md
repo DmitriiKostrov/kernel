@@ -32,3 +32,8 @@
 * [macOS vs Windows - kernels security events - elastic](https://www.elastic.co/blog/macos-windows-what-kernels-tell-you-about-security-events-part-1)
 * [Developing Kernel Extensions (Kexts) for macOS - 2020](https://www.apriorit.com/dev-blog/430-macos-kext-development)  
 * [System Extension internals - 2019](https://knight.sc/reverse%20engineering/2019/08/24/system-extension-internals.html)
+
+# Scheduler
+* [Mach Scheduling and Thread Interfaces - apple doc archive](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/scheduler/scheduler.html#//apple_ref/doc/uid/TP30000905-CH211-BABFGDHA)
+* [Clutch Scheduler - Clutch Scheduler darwin-xhu github](https://github.com/apple/darwin-xnu/blob/main/osfmk/kern/sched_clutch.md)
+* [Scheduling of Processes on M1 - 2022 Draft](https://eclecticlight.co/2022/01/13/scheduling-of-processes-on-m1-series-chips-first-draft/)
