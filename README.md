@@ -8,6 +8,14 @@
 * [Context_Switching - osdev.org](https://wiki.osdev.org/Context_Switching)
 
 **Linux** - CFS is short for Completely Fair Scheduler. The most notable difference is that CFS is not based on run queues for process selection. Instead, it uses a red-black tree with O(log N) complexity that is indexed by CPU time spent.
+SCHED_NORMAL (traditionally called SCHED_OTHER): The scheduling policy that is used for regular tasks.
+
+SCHED_BATCH: Does not preempt nearly as often as regular tasks would, thereby allowing tasks to run longer and make better use of caches but at the cost of interactivity. This is well suited for batch jobs.
+
+SCHED_IDLE: This is even weaker than nice 19, but its not a true idle timer scheduler in order to avoid to get into priority inversion problems which would deadlock the machine.
+
+SCHED_FIFO/_RR are implemented in sched/rt.c and are as specified by POSIX.
+
 
 **FreeBSD** - ULE is the successor to the traditional BSD scheduler. It offers much improved performance on SMP systems as well as uniprocessor systems. It follows a more traditional design with run queues and time slices. It strives to be fair, but can be instructed to favor interactive processes.
 
